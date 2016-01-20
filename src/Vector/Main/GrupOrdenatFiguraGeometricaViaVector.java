@@ -1,10 +1,6 @@
 package Vector.Main;
 
-import java.awt.Color;
-import java.util.Collections;
 import java.util.Vector;
-
-import Vector.figGeometricas.Cercle02;
 import Vector.figGeometricas.FiguraGeometrica02;
 
 /**
@@ -39,12 +35,7 @@ public class GrupOrdenatFiguraGeometricaViaVector {
 		return v.size();
 	}
 
-	/**
-	 * Afegeix, si no hi ha cap objecte amb id�ntica clau, l'objecte obj al
-	 * vector Retorna -1: S'ha afegit sense cap problema -2: S'ha passat una
-	 * refer�ncia nul�la - No es pot afegir >=0: Ja existeix un objecte amb
-	 * igual clau a la posici� retornada per la funci�
-	 */
+
 	public int afegir(FiguraGeometrica02 obj) {
 
 		int i;
@@ -58,21 +49,14 @@ public class GrupOrdenatFiguraGeometricaViaVector {
 		return -1;
 	}
 
-	/**
-	 * Retorna l'objecte que esta a la posicio i Retorna null: Si la posicio no
-	 * existeix o est� buida
-	 */
+
 	public FiguraGeometrica02 exemplarAt(int i) {
 		if ((i < 0) || (i >= v.size()))return null;
 
 		return v.get(i);
 	}
 
-	/**
-	 * Cerca un objecte dins la taula amb codi id�ntic a l'indicat per a
-	 * treure'l de la taula Retorna null: Si no el troba L'objecte extret en cas
-	 * de trobar-lo
-	 */
+
 	public FiguraGeometrica02 extreure(int codi) {
 		int i;
 
